@@ -708,7 +708,7 @@
       '<section style="display:flex;flex-direction:column;gap:10px"><h2>Ayudante que usamos</h2><div role="radiogroup" style="display:flex;flex-direction:column;gap:8px">' + ays + '</div></section>' +
       '<section style="display:flex;flex-direction:column;gap:10px"><h2>País</h2><p class="ayuda-chica" style="margin:0">Para mostrarte datos y teléfonos de ayuda de tu país.</p><div class="grilla-2">' +
         [['AR', 'Argentina'], ['otro', 'Otro país']].map(function (o) { return '<button type="button" class="op" data-pais="' + o[0] + '" aria-pressed="' + (E.pais === o[0]) + '">' + o[1] + '</button>'; }).join('') + '</div></section>' +
-      '<section class="aviso" style="flex-direction:column;gap:6px"><b>Tu privacidad</b><span class="ayuda-chica" style="font-size:14px">FamilIA guarda todo solo en este celular. No pedimos nombres, fotos ni datos de tus hijos.</span></section>' +
+      '<section class="aviso" style="flex-direction:column;gap:6px"><b>Tu privacidad</b><span class="ayuda-chica" style="font-size:14px">FamilIA guarda todo solo en este celular. No pedimos nombres, fotos ni datos de tus hijos.</span><span class="ayuda-chica" style="font-size:14px">Para mejorar la app contamos, sin saber quién sos, cuántas familias la usan y cuántas vuelven después de una semana o un mes. No se envía nada de lo que elegís o escribís.</span></section>' +
       '<button type="button" class="btn btn-suave" data-acc="borrar">Borrar todo y empezar de cero</button><p class="pie">FamilIA · contenido actualizado al ' + esc(fechaLarga(D.contFecha)) + ' (v' + D.contVersion + ')<br>powered by Andexia</p></main>';
   };
   V.ajustes.on = function (ev) {
@@ -743,6 +743,7 @@
     app.innerHTML = vista(r.p[1], r.p[2]);
     app._vista = vista;
     if (cambio) window.scrollTo(0, 0);
+    if (E.listo) medir();
   }
   app.addEventListener('click', function (ev) {
     var a = ev.target.closest('a[href^="#/"]');
@@ -762,9 +763,45 @@
   function alVolver() { var r = desdeUrl(); if (r !== rutaActual) { rutaActual = r; render(); } }
   window.addEventListener('popstate', alVolver);
   window.addEventListener('hashchange', alVolver);
+  /* ---------- Medición anónima (cuántas familias vuelven) ----------
+     Solo en la dirección publicada. Cada celular avisa una vez cada cosa: que abrió por primera vez,
+     que terminó la bienvenida y que volvió a los 7 y a los 30 días. Va con la semana en que empezó,
+     para comparar grupos. No se manda nada de lo que la familia elige ni escribe.
+     Se guarda aparte de lo de la familia: "Borrar todo" no la cuenta como nueva otra vez. */
+  var MEDIR_URL = 'https://familiaengine.goatcounter.com/count';
+  var MEDIR_EN = ['familiaengine.netlify.app'];
+  var CLAVE_MED = 'familia.medicion';
+  var medEnCurso = {};
+  function medir() {
+    if (MEDIR_EN.indexOf(location.hostname) < 0) return;
+    var M = null;
+    try { M = JSON.parse(localStorage.getItem(CLAVE_MED) || 'null'); } catch (e) { return; }
+    var hoy = new Date(); hoy.setHours(0, 0, 0, 0);
+    if (!M || !M.inicio) {
+      var lunes = new Date(hoy); lunes.setDate(hoy.getDate() - (hoy.getDay() + 6) % 7);
+      M = { inicio: hoy.getTime(), semana: lunes.getFullYear() + '-' + ('0' + (lunes.getMonth() + 1)).slice(-2) + '-' + ('0' + lunes.getDate()).slice(-2), enviados: [] };
+    }
+    function guardarM() { try { localStorage.setItem(CLAVE_MED, JSON.stringify(M)); } catch (e) { /* sin guardado */ } }
+    guardarM();
+    var dias = Math.round((hoy.getTime() - M.inicio) / 864e5);
+    var toca = ['nueva'];
+    if (E.listo) toca.push('empezo');
+    if (dias >= 7) toca.push('volvio-7');
+    if (dias >= 30) toca.push('volvio-30');
+    toca.forEach(function (ev) {
+      if (M.enviados.indexOf(ev) >= 0 || medEnCurso[ev]) return;
+      medEnCurso[ev] = true;
+      var img = new Image();
+      img.onload = function () { if (M.enviados.indexOf(ev) < 0) { M.enviados.push(ev); guardarM(); } };
+      img.onerror = function () { medEnCurso[ev] = false; };   /* sin internet: se reintenta la próxima vez */
+      img.src = MEDIR_URL + '?e=true&p=' + encodeURIComponent('evento/' + ev + '/' + M.semana) + '&t=' + encodeURIComponent(ev) + '&rnd=' + Date.now();
+    });
+  }
+
   rutaActual = desdeUrl();
   render();
   buscarActualizacion();
+  medir();
   document.addEventListener('visibilitychange', function () { if (document.visibilityState === 'visible') buscarActualizacion(); });
 
   /* ---------- Funcionamiento sin conexión ---------- */
