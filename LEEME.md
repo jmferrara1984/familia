@@ -65,6 +65,17 @@ Cómo avanza la semana: empieza cuando la familia termina el desafío (o la elig
 
 Países: los datos con `pais: "AR"` y los teléfonos de `telefonos.AR` solo se muestran a quien tiene Argentina en Ajustes (se detecta solo por la zona horaria). Para sumar otro país, agregar sus datos con su código (por ejemplo `"MX"`) y sus teléfonos en `telefonos`, y sumar la opción en Ajustes.
 
+## Medir cuántas familias vuelven
+
+La app cuenta, sin saber quién es cada familia, cuatro cosas por celular y una sola vez cada una: `nueva` (abrió por primera vez), `empezo` (terminó la bienvenida), `volvio-7` y `volvio-30` (la abrió de nuevo 7 o 30 días después de empezar). Cada aviso lleva la semana en que empezó (el lunes de esa semana), por ejemplo `evento/volvio-7/2026-10-26`.
+
+- Los avisos van a GoatCounter, un contador de visitas sin cookies, en la cuenta `familiaengine` (https://familiaengine.goatcounter.com).
+- Solo se mide en la dirección publicada (`MEDIR_EN` en `app.js`). Probarla en la computadora no suma.
+- Sin internet, el aviso se reintenta la próxima vez que se abre la app.
+- "Borrar todo" no vuelve a contar a la familia como nueva.
+- Cómo leerlo: familias que vuelven al día 7 de una semana = `volvio-7/<semana>` ÷ `empezo/<semana>`.
+- Para medir también en un dominio propio, sumarlo a `MEDIR_EN`.
+
 ## Cambios frecuentes
 
 - **Agregar o editar frases:** en `contenido.json`, copiar un bloque de `frases` y cambiar `id` (único), `cat`, `titulo`, `edad` [mínimo, máximo], `etiqueta`, `cuando`, `frase` y `mascota`. Lo que va entre [corchetes] aparece como campo amarillo para completar.
@@ -74,7 +85,7 @@ Países: los datos con `pais: "AR"` y los teléfonos de `telefonos.AR` solo se m
 ## Próximos pasos sugeridos
 
 1. **Cobro y acceso:** link de pago de Mercado Pago + código de acceso por comprador (versión simple), o cuentas de usuario con Supabase o Firebase.
-2. **Medición:** analítica respetuosa de la privacidad (por ejemplo, Plausible) para saber qué frases se usan.
+2. **Medición:** ya cuenta familias nuevas y las que vuelven (ver arriba). Falta saber qué frases se usan.
 3. **Tiendas de apps:** empaquetar esta misma app con Capacitor para App Store y Google Play.
 4. **Planilla de edición:** una planilla de Google con una fila por dato y estado "borrador/aprobado", que genere `contenido.json` automáticamente.
 5. **Agente de revisión mensual:** revisa las fuentes, avisa vencimientos y propone datos nuevos en borrador.

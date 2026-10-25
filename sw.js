@@ -1,5 +1,5 @@
 /* FamilIA · funcionamiento sin conexión */
-var CACHE = 'familia-v4';
+var CACHE = 'familia-v5';
 var BASE = ['./', 'index.html', 'styles.css', 'data.js', 'contenido-base.js', 'app.js', 'manifest.webmanifest', 'img/icon-192.png', 'img/icon-512.png'];
 var ESPECIES = ['unicornio', 'conejo', 'perro', 'gato', 'zorro', 'futbolista'];
 var EXPR = ['feliz', 'saluda', 'guino', 'pensando', 'festeja', 'sorpresa'];
