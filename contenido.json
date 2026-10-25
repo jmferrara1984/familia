@@ -1,0 +1,1168 @@
+{
+  "version": 2,
+  "actualizado": "2026-10-24",
+  "frases": [
+    {
+      "id": "cocina-menu",
+      "cat": "cocina",
+      "titulo": "Menú de la semana con lo que hay",
+      "edad": [
+        0,
+        17
+      ],
+      "etiqueta": "Toda la familia",
+      "cuando": "Es domingo y no sabés qué cocinar en la semana.",
+      "frase": "Armame un menú de cenas para 5 días para una familia de [cantidad de personas] personas, con chicos de [edades]. Tengo en casa: [lo que hay en la heladera y la alacena]. Que sean platos simples, de menos de 40 minutos, y al final dame la lista de lo que me falta comprar.",
+      "mascota": "Si a alguien no le gusta algo, avisale al ayudante y te cambia ese plato."
+    },
+    {
+      "id": "cocina-hoy",
+      "cat": "cocina",
+      "titulo": "Qué cocino hoy con lo que queda",
+      "edad": [
+        0,
+        17
+      ],
+      "etiqueta": "Toda la familia",
+      "cuando": "Son las 8 de la noche y la heladera está medio vacía.",
+      "frase": "Tengo [ingredientes]. Dame 3 ideas de cena rápida para [cantidad de personas] personas, con pasos cortos. Que a los chicos de [edades] les guste.",
+      "mascota": "Elijan la receta entre todos: los chicos comen mejor lo que ayudan a elegir."
+    },
+    {
+      "id": "cocina-super",
+      "cat": "cocina",
+      "titulo": "Lista del súper con presupuesto",
+      "edad": [
+        0,
+        17
+      ],
+      "etiqueta": "Toda la familia",
+      "cuando": "Querés comprar para la semana sin pasarte de un monto.",
+      "frase": "Tengo [monto] pesos para el súper de esta semana para [cantidad de personas] personas. Armame una lista ordenada por sección del súper y sugerime opciones más baratas para cada cosa.",
+      "mascota": "Los precios cambian mucho: usá la lista como guía y ajustá en el momento."
+    },
+    {
+      "id": "cocina-juntos",
+      "cat": "cocina",
+      "titulo": "Cocinar juntos",
+      "edad": [
+        4,
+        12
+      ],
+      "etiqueta": "4 a 12 años",
+      "cuando": "Querés una actividad de cocina con los chicos.",
+      "frase": "Dame una receta fácil para cocinar con un chico de [edad] años. Separá los pasos que puede hacer solo y los que tiene que hacer un adulto.",
+      "mascota": "¡El que cocina no lava los platos!"
+    },
+    {
+      "id": "cocina-vianda",
+      "cat": "cocina",
+      "titulo": "Vianda para la escuela",
+      "edad": [
+        3,
+        12
+      ],
+      "etiqueta": "3 a 12 años",
+      "cuando": "No se te ocurren ideas para la vianda o la merienda.",
+      "frase": "Dame 5 ideas de vianda para la escuela para un chico de [edad] años, fáciles de preparar la noche anterior y que aguanten sin heladera.",
+      "mascota": "Si hay alergias o indicaciones del pediatra, esas mandan sobre cualquier idea."
+    },
+    {
+      "id": "tarea-explique",
+      "cat": "tarea",
+      "titulo": "Que explique, no que resuelva",
+      "edad": [
+        6,
+        17
+      ],
+      "etiqueta": "6 a 17 años",
+      "destacada": true,
+      "cuando": "Tu hijo tiene una tarea y no sabe por dónde empezar.",
+      "frase": "Mi hijo de [edad] años tiene esta tarea: [pegá la consigna]. No le des la respuesta. Explicale paso a paso con un ejemplo parecido y hacele preguntas para que llegue solo al resultado. Usá palabras simples.",
+      "mascota": "Si igual da la respuesta, escribile: \"Volvé a explicar sin darme el resultado\"."
+    },
+    {
+      "id": "tarea-consigna",
+      "cat": "tarea",
+      "titulo": "Entender la consigna",
+      "edad": [
+        6,
+        12
+      ],
+      "etiqueta": "6 a 12 años",
+      "cuando": "No entienden qué les piden.",
+      "frase": "Explicale a un chico de [edad] años qué le están pidiendo en esta consigna, con otras palabras y sin hacer la tarea: [pegá la consigna].",
+      "mascota": "Pedile que te lo cuente con sus palabras antes de empezar."
+    },
+    {
+      "id": "tarea-prueba",
+      "cat": "tarea",
+      "titulo": "Estudiar para una prueba jugando",
+      "edad": [
+        8,
+        17
+      ],
+      "etiqueta": "8 a 17 años",
+      "cuando": "Hay prueba y querés ayudar a repasar.",
+      "frase": "Tomale a mi hijo de [edad] años 10 preguntas sobre [tema], de a una y como un juego de puntos. Esperá su respuesta antes de seguir y, si se equivoca, explicale por qué.",
+      "mascota": "Diez minutos por día rinden más que dos horas la noche anterior."
+    },
+    {
+      "id": "tarea-ingles",
+      "cat": "tarea",
+      "titulo": "Practicar inglés conversando",
+      "edad": [
+        8,
+        17
+      ],
+      "etiqueta": "8 a 17 años",
+      "cuando": "Querés que practique inglés fuera de la escuela.",
+      "frase": "Hacé de amigo que habla inglés y charlá con un chico de [edad] años sobre [tema que le guste]. Usá frases cortas para su nivel, que es [principiante, intermedio o avanzado], y corregí sus errores con amabilidad.",
+      "mascota": "Que elijan ellos el tema: fútbol, videojuegos o animales."
+    },
+    {
+      "id": "tarea-entendio",
+      "cat": "tarea",
+      "titulo": "Revisar si entendió (o si copió)",
+      "edad": [
+        8,
+        17
+      ],
+      "etiqueta": "8 a 17 años",
+      "cuando": "La tarea está hecha y querés saber si la entendió.",
+      "frase": "Mi hijo de [edad] años hizo esta tarea: [pegá la tarea]. Dame 3 preguntas cortas que le pueda hacer para saber si entendió el tema.",
+      "mascota": "Preguntalo con curiosidad, no como examen."
+    },
+    {
+      "id": "tarea-tp",
+      "cat": "tarea",
+      "titulo": "Organizar un trabajo práctico",
+      "edad": [
+        10,
+        17
+      ],
+      "etiqueta": "10 a 17 años",
+      "cuando": "Tiene un trabajo largo para dentro de varios días.",
+      "frase": "Ayudame a dividir este trabajo para un chico de [edad] años en pasos de 20 minutos, de hoy hasta el [fecha de entrega]: [pegá la consigna]. No hagas el trabajo: solo el plan.",
+      "mascota": "Peguen el plan en la heladera y tachen cada paso hecho."
+    },
+    {
+      "id": "pantallas-1",
+      "cat": "pantallas",
+      "dia": 1,
+      "titulo": "El mapa de pantallas",
+      "edad": [
+        0,
+        17
+      ],
+      "etiqueta": "Toda la familia",
+      "cuando": "Para empezar el desafío, con todos presentes.",
+      "frase": "Haceme 5 preguntas, de a una, para descubrir cómo usamos las pantallas en mi familia. Somos [cantidad de personas], con chicos de [edades]. Respondemos todos juntos. Al final armá un mapa simple del día y sugerinos un momento para compartir sin pantallas. Que sea divertido y sin retos.",
+      "mascota": "Los grandes también responden. ¡Vale reírse!"
+    },
+    {
+      "id": "pantallas-2",
+      "cat": "pantallas",
+      "dia": 2,
+      "titulo": "El acuerdo familiar",
+      "edad": [
+        0,
+        17
+      ],
+      "etiqueta": "Toda la familia",
+      "cuando": "Después del mapa, para poner reglas entre todos.",
+      "frase": "Ayudanos a armar un acuerdo familiar de pantallas para una familia con chicos de [edades]. Proponenos 5 reglas simples que incluyan a los adultos, con un aviso 10 minutos antes de apagar. Después preguntanos qué cambiaríamos.",
+      "mascota": "Una regla que eligen ellos se cumple mucho más."
+    },
+    {
+      "id": "pantallas-3",
+      "cat": "pantallas",
+      "dia": 3,
+      "titulo": "Cena sin pantallas",
+      "edad": [
+        0,
+        17
+      ],
+      "etiqueta": "Toda la familia",
+      "cuando": "Antes de sentarse a comer.",
+      "frase": "Dame 8 preguntas divertidas para charlar en la cena con chicos de [edades], para que hablen todos. Nada de preguntas de la escuela.",
+      "mascota": "Los celulares, a dormir a otra habitación durante la cena."
+    },
+    {
+      "id": "pantallas-4",
+      "cat": "pantallas",
+      "dia": 4,
+      "titulo": "Pantalla compartida: crear juntos",
+      "edad": [
+        4,
+        12
+      ],
+      "etiqueta": "4 a 12 años",
+      "cuando": "Para usar la pantalla juntos, creando en vez de mirar.",
+      "frase": "Vamos a inventar un cuento entre todos. El protagonista es [personaje que elijan los chicos]. Escribí el comienzo en 4 líneas y preguntá qué pasa después. Seguimos por turnos.",
+      "mascota": "Al final, que los chicos dibujen la tapa en papel."
+    },
+    {
+      "id": "pantallas-5",
+      "cat": "pantallas",
+      "dia": 5,
+      "titulo": "Tarea con ayudante",
+      "edad": [
+        6,
+        17
+      ],
+      "etiqueta": "6 a 17 años",
+      "usa": "tarea-explique",
+      "cuando": "Para aprender a usar el ayudante bien en la escuela.",
+      "frase": "Mi hijo de [edad] años tiene esta tarea: [pegá la consigna]. No le des la respuesta. Explicale paso a paso con un ejemplo parecido y hacele preguntas para que llegue solo al resultado. Usá palabras simples.",
+      "mascota": "Hoy el adulto acompaña los primeros 10 minutos."
+    },
+    {
+      "id": "pantallas-6",
+      "cat": "pantallas",
+      "dia": 6,
+      "titulo": "Fin de semana desenchufado",
+      "edad": [
+        0,
+        17
+      ],
+      "etiqueta": "Toda la familia",
+      "cuando": "El viernes, para planear el fin de semana.",
+      "frase": "Armanos un plan de fin de semana sin pantallas para una familia con chicos de [edades], en [ciudad], con un presupuesto [bajo o medio]. Incluí una opción por si llueve.",
+      "mascota": "Una sola actividad nueva ya cuenta como éxito."
+    },
+    {
+      "id": "pantallas-7",
+      "cat": "pantallas",
+      "dia": 7,
+      "titulo": "Ritual de cierre del día",
+      "edad": [
+        3,
+        12
+      ],
+      "etiqueta": "3 a 12 años",
+      "cuando": "A la noche, para apagar pantallas antes de dormir.",
+      "frase": "Armame una rutina de 30 minutos antes de dormir para un chico de [edad] años, sin pantallas, con pasos cortos y un momento de cuento leído en voz alta.",
+      "mascota": "¡Terminaron el desafío! Elijan qué regla mantener para siempre."
+    },
+    {
+      "id": "dormir-cuento",
+      "cat": "dormir",
+      "titulo": "Cuento con su personaje favorito",
+      "edad": [
+        3,
+        9
+      ],
+      "etiqueta": "3 a 9 años",
+      "destacada": true,
+      "cuando": "A la hora de dormir.",
+      "frase": "Escribí un cuento corto para leer en voz alta a un chico de [edad] años. El protagonista es [personaje o animal favorito] y aprende algo sobre [compartir, la paciencia o la valentía]. Que termine tranquilo, para dormir.",
+      "mascota": "Leelo vos: la voz de papá o mamá es la mejor parte."
+    },
+    {
+      "id": "dormir-miedo",
+      "cat": "dormir",
+      "titulo": "Cuento para un miedo",
+      "edad": [
+        3,
+        9
+      ],
+      "etiqueta": "3 a 9 años",
+      "cuando": "Tiene miedo a la oscuridad, a un cambio o a algo nuevo.",
+      "frase": "Escribí un cuento tierno para un chico de [edad] años que tiene miedo a [miedo]. Que el personaje sienta lo mismo y encuentre una forma de sentirse seguro.",
+      "mascota": "Si el miedo dura mucho o es muy fuerte, hablá con su pediatra."
+    },
+    {
+      "id": "dormir-rutina",
+      "cat": "dormir",
+      "titulo": "Rutina para dormir",
+      "edad": [
+        2,
+        10
+      ],
+      "etiqueta": "2 a 10 años",
+      "cuando": "Cada noche es una batalla para acostarse.",
+      "frase": "Armame una rutina visual de 5 pasos para ir a dormir para un chico de [edad] años, con un nombre divertido para cada paso, empezando a las [hora].",
+      "mascota": "Dibujen los pasos juntos y péguenlos en su pieza."
+    },
+    {
+      "id": "dormir-turnos",
+      "cat": "dormir",
+      "titulo": "Cuento que inventamos juntos",
+      "edad": [
+        4,
+        10
+      ],
+      "etiqueta": "4 a 10 años",
+      "cuando": "Quieren crear en vez de solo escuchar.",
+      "frase": "Vamos a inventar un cuento por turnos con un chico de [edad] años. Vos escribís una oración y esperás la de él. Empezá con un lugar mágico.",
+      "mascota": "Guarden los mejores cuentos en un cuaderno familiar."
+    },
+    {
+      "id": "dormir-charla",
+      "cat": "dormir",
+      "titulo": "Charla tranquila antes de dormir",
+      "edad": [
+        6,
+        12
+      ],
+      "etiqueta": "6 a 12 años",
+      "cuando": "Querés saber cómo le fue en el día.",
+      "frase": "Dame 5 preguntas suaves para charlar antes de dormir con un chico de [edad] años, para saber cómo se sintió hoy, sin que parezca un interrogatorio.",
+      "mascota": "A veces la mejor respuesta llega después de un silencio."
+    },
+    {
+      "id": "org-semana",
+      "cat": "organizar",
+      "titulo": "Semana en un vistazo",
+      "edad": [
+        0,
+        17
+      ],
+      "etiqueta": "Toda la familia",
+      "cuando": "El domingo a la noche, para ordenar la semana.",
+      "frase": "Ordename esta semana familiar en una tabla por día, con horarios y quién lleva a quién: [pegá actividades, horarios y compromisos]. Avisame si hay choques de horario.",
+      "mascota": "Compartila en el grupo de la familia."
+    },
+    {
+      "id": "org-tareas",
+      "cat": "organizar",
+      "titulo": "Repartir las tareas de la casa",
+      "edad": [
+        6,
+        17
+      ],
+      "etiqueta": "6 a 17 años",
+      "cuando": "Siempre hacen las tareas los mismos.",
+      "frase": "Repartí estas tareas de la casa entre [cantidad de adultos] adultos y chicos de [edades], según lo que puede hacer cada edad, y armá una rotación semanal justa: [tareas].",
+      "mascota": "Que cada uno elija una tarea que le guste."
+    },
+    {
+      "id": "org-mensaje",
+      "cat": "organizar",
+      "titulo": "Mensaje para la escuela o el grupo de padres",
+      "edad": [
+        0,
+        17
+      ],
+      "etiqueta": "Para adultos",
+      "cuando": "Tenés que escribir algo delicado y no te salen las palabras.",
+      "frase": "Ayudame a escribir un mensaje amable y corto para [la maestra o el grupo de padres] sobre [tema]. Que sea claro y respetuoso.",
+      "mascota": "Leelo una vez más antes de enviar y ajustalo a tu forma de hablar."
+    },
+    {
+      "id": "org-cumple",
+      "cat": "organizar",
+      "titulo": "Organizar un cumpleaños",
+      "edad": [
+        0,
+        17
+      ],
+      "etiqueta": "Toda la familia",
+      "cuando": "Se viene un cumple y no sabés por dónde empezar.",
+      "frase": "Armame un plan para el cumpleaños de un chico de [edad] años con [cantidad de invitados] invitados, presupuesto [monto] y tema [tema]. Incluí juegos, menú y una lista de tareas por semana.",
+      "mascota": "Dejen que el cumpleañero elija el tema."
+    },
+    {
+      "id": "org-mananas",
+      "cat": "organizar",
+      "titulo": "Mañanas sin corridas",
+      "edad": [
+        3,
+        12
+      ],
+      "etiqueta": "3 a 12 años",
+      "cuando": "Todas las mañanas se llega tarde.",
+      "frase": "Armame una rutina de mañana para una familia con chicos de [edades] que sale de casa a las [hora]. Incluí lo que conviene dejar listo la noche anterior.",
+      "mascota": "La mochila lista la noche anterior es el gran secreto."
+    },
+    {
+      "id": "planes-juegos",
+      "cat": "planes",
+      "titulo": "Juegos con lo que hay en casa",
+      "edad": [
+        3,
+        12
+      ],
+      "etiqueta": "3 a 12 años",
+      "destacada": true,
+      "cuando": "\"Me aburro\" y no querés dar la tablet.",
+      "frase": "Dame 5 juegos para hacer en casa con chicos de [edades], usando solo [materiales que tengas: papel, almohadas, una pelota]. Que duren entre 15 y 30 minutos.",
+      "mascota": "Probá uno hoy y votá con los chicos cuál repetir."
+    },
+    {
+      "id": "planes-salida",
+      "cat": "planes",
+      "titulo": "Salida barata cerca de casa",
+      "edad": [
+        0,
+        17
+      ],
+      "etiqueta": "Toda la familia",
+      "cuando": "Quieren salir sin gastar mucho.",
+      "frase": "Sugerime 5 planes gratuitos o baratos para hacer en familia en [ciudad o barrio], con chicos de [edades]. Incluí opciones al aire libre y bajo techo.",
+      "mascota": "Confirmen horarios y precios antes de salir."
+    },
+    {
+      "id": "planes-creativo",
+      "cat": "planes",
+      "titulo": "Desafío creativo de la semana",
+      "edad": [
+        5,
+        14
+      ],
+      "etiqueta": "5 a 14 años",
+      "cuando": "Querés un proyecto que dure varios días.",
+      "frase": "Proponé un desafío creativo de una semana para chicos de [edades]: construir, dibujar o inventar algo, con un paso por día y un final para mostrar a la familia.",
+      "mascota": "Saquen una foto del resultado final, ¡pero sin caras en redes!"
+    },
+    {
+      "id": "planes-preguntas",
+      "cat": "planes",
+      "titulo": "Juego de preguntas familiar",
+      "edad": [
+        6,
+        17
+      ],
+      "etiqueta": "6 a 17 años",
+      "cuando": "Sobremesa o viaje en auto.",
+      "frase": "Armá un juego de preguntas y respuestas para una familia con chicos de [edades], con 3 niveles de dificultad y temas variados. Hacé las preguntas de a una.",
+      "mascota": "El que pierde elige la próxima categoría."
+    },
+    {
+      "id": "planes-lluvia",
+      "cat": "planes",
+      "titulo": "Plan para día de lluvia",
+      "edad": [
+        3,
+        12
+      ],
+      "etiqueta": "3 a 12 años",
+      "cuando": "Llueve y están todos encerrados.",
+      "frase": "Armame un plan de tarde de lluvia de 3 horas para chicos de [edades], con una actividad tranquila, una movida y una de cocina, sin pantallas.",
+      "mascota": "Un fuerte de almohadas siempre gana."
+    },
+    {
+      "id": "charlas-ia",
+      "cat": "charlas",
+      "titulo": "Explicar qué es la IA",
+      "edad": [
+        6,
+        12
+      ],
+      "etiqueta": "6 a 12 años",
+      "cuando": "Tu hijo pregunta qué es o cómo funciona.",
+      "frase": "Explicame en 5 oraciones simples, para contarle a un chico de [edad] años, qué es la inteligencia artificial, qué puede hacer y por qué a veces se equivoca.",
+      "mascota": "Lo más importante: es una herramienta, no una persona."
+    },
+    {
+      "id": "charlas-chatbot",
+      "cat": "charlas",
+      "titulo": "Los chatbots \"amigos\"",
+      "edad": [
+        10,
+        17
+      ],
+      "etiqueta": "10 a 17 años",
+      "destacada": true,
+      "cuando": "Tu hijo charla mucho con un chatbot o una app de compañía.",
+      "frase": "Ayudame a preparar una charla sin retos con mi hijo de [edad] años sobre por qué un chatbot no es un amigo de verdad. Dame 4 preguntas para abrir la conversación y 3 ideas para equilibrar ese uso.",
+      "mascota": "Primero escuchá qué le gusta de esa app."
+    },
+    {
+      "id": "charlas-falsas",
+      "cat": "charlas",
+      "titulo": "Imágenes y videos falsos",
+      "edad": [
+        10,
+        17
+      ],
+      "etiqueta": "10 a 17 años",
+      "cuando": "Aparece una foto o video que parece real y no lo es.",
+      "frase": "Explicame cómo hablar con mi hijo de [edad] años sobre imágenes y videos falsos hechos con IA: cómo reconocerlos, por qué no compartirlos y qué hacer si alguien hace uno de él o de un compañero.",
+      "mascota": "Si involucra a un chico, no se reenvía: se guarda la evidencia y se avisa a la escuela."
+    },
+    {
+      "id": "charlas-datos",
+      "cat": "charlas",
+      "titulo": "Datos que nunca se comparten",
+      "edad": [
+        8,
+        17
+      ],
+      "etiqueta": "8 a 17 años",
+      "cuando": "Antes de que empiece a usar apps o ayudantes por su cuenta.",
+      "frase": "Armá una lista simple y fácil de recordar, para un chico de [edad] años, de datos que nunca hay que compartir en internet ni con un chatbot, con un ejemplo de cada uno.",
+      "mascota": "Peguen la lista al lado de la compu."
+    },
+    {
+      "id": "charlas-malestar",
+      "cat": "charlas",
+      "titulo": "Algo en internet lo hizo sentir mal",
+      "edad": [
+        6,
+        17
+      ],
+      "etiqueta": "6 a 17 años",
+      "cuando": "Notaste que algo que vio o le dijeron en internet lo afectó.",
+      "frase": "Mi hijo de [edad] años se sintió mal por algo que vio en internet. Dame consejos para escucharlo con calma, sin retar ni sacarle el celular de golpe, y señales para saber cuándo pedir ayuda profesional.",
+      "mascota": "Si hay acoso, amenazas o pedidos de fotos, consultá enseguida con la escuela y los canales de ayuda de tu provincia."
+    },
+    {
+      "id": "charlas-celular",
+      "cat": "charlas",
+      "titulo": "El primer celular",
+      "edad": [
+        9,
+        14
+      ],
+      "etiqueta": "9 a 14 años",
+      "cuando": "Están por darle su primer celular.",
+      "frase": "Ayudame a armar un acuerdo para el primer celular de un chico de [edad] años: horarios, lugares sin celular, apps permitidas, qué hacer si algo lo incomoda y cómo ir ganando más libertad.",
+      "mascota": "Fírmenlo los dos y revísenlo cada tres meses."
+    }
+  ],
+  "seguridad": [
+    {
+      "id": "edades",
+      "titulo": "Edades, nunca nombres",
+      "texto": "Al ayudante decile \"mi hijo de 9\", no su nombre."
+    },
+    {
+      "id": "fotos",
+      "titulo": "Nunca fotos de los chicos",
+      "texto": "Ni para cuentos ni para dibujos."
+    },
+    {
+      "id": "datos",
+      "titulo": "Sin dirección ni escuela",
+      "texto": "Tampoco teléfonos ni datos de salud."
+    },
+    {
+      "id": "edadminima",
+      "titulo": "Respetar la edad mínima",
+      "texto": "Cada app tiene una. Revisala antes de dársela."
+    },
+    {
+      "id": "chatbots",
+      "titulo": "Hablar de los chatbots",
+      "texto": "Explicales que no son personas ni amigos."
+    },
+    {
+      "id": "raro",
+      "titulo": "Si algo parece raro, consultá",
+      "texto": "Imágenes falsas o pedidos extraños: frená y preguntá."
+    }
+  ],
+  "sabias": [
+    {
+      "id": "oms-edades",
+      "tipo": "pantallas",
+      "texto": "La OMS recomienda que los menores de 2 años no pasen tiempo frente a pantallas y que entre los 2 y los 4 años no superen 1 hora por día. Cuanto menos, mejor.",
+      "accion": "Cambiá parte de ese tiempo por juego en el piso o un cuento leído.",
+      "fuente": "OMS, guía 2019 (vía Redacción Médica)",
+      "url": "https://www.redaccionmedica.com/ultimas-noticias/20190424/la-oms-recomienda-una-hora-diaria-como-maximo-frente-pantalla-para-ninos-menores-de-anos/11465_0.html",
+      "frase": "dormir-cuento",
+      "pais": "global",
+      "revisado": "2026-10"
+    },
+    {
+      "id": "uso-problematico",
+      "tipo": "pantallas",
+      "texto": "Casi la mitad de los chicos argentinos de 9 a 17 años (46%) siente que usa demasiado el celular, internet o los videojuegos. Las señales más comunes: les va peor en la escuela y no logran usarlo menos.",
+      "accion": "Preguntale, sin retar, si alguna vez sintió que no podía dejar el celular.",
+      "fuente": "UNICEF y UNESCO, Kids Online Argentina 2025",
+      "url": "https://www.unicef.org/argentina/media/25221/file/Resumen%20Ejecutivo.%20Ni%C3%B1as,%20Ni%C3%B1os%20y%20Adolescentes%20conectados%20(ENGLISH).pdf.pdf",
+      "frase": "pantallas-1",
+      "pais": "AR",
+      "revisado": "2026-10"
+    },
+    {
+      "id": "primer-celular",
+      "tipo": "pantallas",
+      "texto": "En Argentina, el primer celular llega en promedio a los 9,6 años. Entre los chicos que hoy tienen de 9 a 11 años, el 83% lo tuvo antes de cumplir 10.",
+      "accion": "Antes de dárselo, armen juntos un acuerdo de uso.",
+      "fuente": "UNICEF y UNESCO, Kids Online Argentina 2025",
+      "url": "https://www.unicef.org/argentina/media/25221/file/Resumen%20Ejecutivo.%20Ni%C3%B1as,%20Ni%C3%B1os%20y%20Adolescentes%20conectados%20(ENGLISH).pdf.pdf",
+      "frase": "charlas-celular",
+      "pais": "AR",
+      "revisado": "2026-10"
+    },
+    {
+      "id": "redes-chicos",
+      "tipo": "pantallas",
+      "texto": "El 58% de los chicos de 9 a 11 años usa redes sociales casi todos los días, aunque las redes más populares piden tener al menos 13 años.",
+      "accion": "Revisá juntos qué apps tiene y la edad mínima de cada una.",
+      "fuente": "UNICEF y UNESCO, Kids Online Argentina 2025",
+      "url": "https://www.unicef.org/argentina/media/25221/file/Resumen%20Ejecutivo.%20Ni%C3%B1as,%20Ni%C3%B1os%20y%20Adolescentes%20conectados%20(ENGLISH).pdf.pdf",
+      "pais": "AR",
+      "revisado": "2026-10"
+    },
+    {
+      "id": "limites",
+      "tipo": "pantallas",
+      "texto": "Solo 4 de cada 10 chicos tienen en casa límites de tiempo para usar internet.",
+      "accion": "Armen el acuerdo familiar del desafío: con reglas que valen también para los grandes.",
+      "fuente": "UNICEF y UNESCO, Kids Online Argentina 2025",
+      "url": "https://www.unicef.org/argentina/media/25221/file/Resumen%20Ejecutivo.%20Ni%C3%B1as,%20Ni%C3%B1os%20y%20Adolescentes%20conectados%20(ENGLISH).pdf.pdf",
+      "frase": "pantallas-2",
+      "pais": "AR",
+      "revisado": "2026-10"
+    },
+    {
+      "id": "conflicto",
+      "tipo": "pantallas",
+      "texto": "Las pantallas son el conflicto número uno en los hogares argentinos, según una encuesta a 10.800 familias.",
+      "accion": "No es solo tu casa. Empiecen por mirar cómo las usan, sin culpas.",
+      "fuente": "Santillana y CIEC, 2026 (vía El Arcón de Clio)",
+      "url": "https://revista.elarcondeclio.com.ar/la-inteligencia-artificial-redefine-el-vinculo-entre-familias-jovenes-y-escuelas-en-argentina/",
+      "frase": "pantallas-1",
+      "pais": "AR",
+      "revisado": "2026-10"
+    },
+    {
+      "id": "adelgazar",
+      "tipo": "pantallas",
+      "texto": "El 67% de los chicos y adolescentes vio en internet contenidos sobre cómo adelgazar o ser más flacos.",
+      "accion": "Hablen de que lo que muestran las redes no es real ni es la medida de nadie.",
+      "fuente": "UNICEF y UNESCO, Kids Online Argentina 2025",
+      "url": "https://www.unicef.org/argentina/media/25221/file/Resumen%20Ejecutivo.%20Ni%C3%B1as,%20Ni%C3%B1os%20y%20Adolescentes%20conectados%20(ENGLISH).pdf.pdf",
+      "pais": "AR",
+      "revisado": "2026-10"
+    },
+    {
+      "id": "apuestas",
+      "tipo": "seguridad",
+      "texto": "Uno de cada cuatro adolescentes de 12 a 17 años (24%) ya apostó dinero online alguna vez.",
+      "accion": "Revisá qué medios de pago tiene a mano y hablen de cómo enganchan las apuestas.",
+      "fuente": "UNICEF y UNESCO, Kids Online Argentina 2025",
+      "url": "https://www.unicef.org/argentina/media/25221/file/Resumen%20Ejecutivo.%20Ni%C3%B1as,%20Ni%C3%B1os%20y%20Adolescentes%20conectados%20(ENGLISH).pdf.pdf",
+      "pais": "AR",
+      "revisado": "2026-10"
+    },
+    {
+      "id": "desconocidos",
+      "tipo": "seguridad",
+      "texto": "El 47% de los chicos tuvo contacto con desconocidos en internet, y 1 de cada 3 se encontró en persona con alguien que conoció online.",
+      "accion": "Regla de oro: nunca encontrarse con alguien de internet sin avisar a un adulto.",
+      "fuente": "Kids Online Argentina 2025 (vía Chequeado)",
+      "url": "https://chequeado.com/el-explicador/la-mitad-de-los-ninos-ninas-y-adolescentes-de-la-argentina-percibe-tener-un-uso-problematico-de-internet-celulares-y-videojuegos/",
+      "frase": "charlas-datos",
+      "pais": "AR",
+      "revisado": "2026-10"
+    },
+    {
+      "id": "ciberacoso",
+      "tipo": "seguridad",
+      "texto": "El 21% de los chicos fue maltratado online por un compañero en el último año, y para el 6% pasa una y otra vez. Les pasa más a las chicas y a los de 12 a 17 años.",
+      "accion": "Si notás cambios de ánimo después de usar el celular, abrí la charla con calma.",
+      "fuente": "UNICEF y UNESCO, Kids Online Argentina 2025",
+      "url": "https://www.unicef.org/argentina/media/25221/file/Resumen%20Ejecutivo.%20Ni%C3%B1as,%20Ni%C3%B1os%20y%20Adolescentes%20conectados%20(ENGLISH).pdf.pdf",
+      "frase": "charlas-malestar",
+      "pais": "AR",
+      "revisado": "2026-10"
+    },
+    {
+      "id": "grooming-ley",
+      "tipo": "seguridad",
+      "texto": "En Argentina, el grooming (cuando un adulto acosa a un chico por internet) es un delito desde 2013 (Ley 26.904). La Línea 137 recibe denuncias las 24 horas en todo el país.",
+      "accion": "Si pasa: no borres los mensajes ni el perfil, guardá capturas y denunciá.",
+      "fuente": "Gobierno de Argentina",
+      "url": "https://www.argentina.gob.ar/noticias/el-grooming-no-es-tema-de-ayer",
+      "pais": "AR",
+      "revisado": "2026-10"
+    },
+    {
+      "id": "sextorsion",
+      "tipo": "seguridad",
+      "texto": "El FBI registró en un año más de 3.000 chicos víctimas de extorsión con fotos íntimas, en su mayoría varones de 14 a 17 años. Los delincuentes se hacen pasar por chicos de su edad.",
+      "accion": "Decile a tu hijo que si le pasa, no está en problemas con vos: no tiene que pagar ni responder, solo contarte.",
+      "fuente": "FBI, alerta de diciembre de 2022 (vía Fox News)",
+      "url": "https://www.foxnews.com/us/fbi-issues-public-safety-alert-says-3000-minors-have-been-sextortion-victims-horrific-increase",
+      "frase": "charlas-malestar",
+      "pais": "global",
+      "revisado": "2026-10"
+    },
+    {
+      "id": "rapidez",
+      "tipo": "seguridad",
+      "texto": "Según el FBI, desde el primer mensaje hasta la amenaza pueden pasar apenas dos horas. Los contactos llegan por redes, apps de mensajes y chats de videojuegos.",
+      "accion": "Conocé los juegos y apps que usa. Jugar una partida con él ayuda más que prohibir.",
+      "fuente": "FBI El Paso, enero de 2026 (vía KLTV)",
+      "url": "https://www.kltv.com/2026/01/14/fbi-warns-rising-sextortion-cases-targeting-minors/",
+      "pais": "global",
+      "revisado": "2026-10"
+    },
+    {
+      "id": "acompanar",
+      "tipo": "seguridad",
+      "texto": "Acompañar funciona: los chicos con adultos presentes en su vida digital se exponen menos a riesgos online (29%) que los que casi no tienen acompañamiento (42%).",
+      "accion": "Preguntale qué vio hoy en internet, igual que le preguntás cómo le fue en la escuela.",
+      "fuente": "UNICEF y UNESCO, Kids Online Argentina 2025",
+      "url": "https://www.unicef.org/argentina/media/25221/file/Resumen%20Ejecutivo.%20Ni%C3%B1as,%20Ni%C3%B1os%20y%20Adolescentes%20conectados%20(ENGLISH).pdf.pdf",
+      "pais": "AR",
+      "revisado": "2026-10"
+    },
+    {
+      "id": "linea102",
+      "tipo": "seguridad",
+      "texto": "En provincias como Mendoza, la Línea 102 escucha y orienta gratis y de forma confidencial ante situaciones que afectan a chicos y adolescentes.",
+      "accion": "Agendá el 102 y el 137. Ante una emergencia, llamá al 911.",
+      "fuente": "Gobierno de Mendoza",
+      "url": "https://www.mendoza.gov.ar/prensa/el-102-atendera-las-24-horas/",
+      "pais": "AR",
+      "revisado": "2026-10"
+    },
+    {
+      "id": "ia-escuela",
+      "tipo": "consejo",
+      "texto": "El 58% de los chicos argentinos ya usó inteligencia artificial, y 2 de cada 3 la usan para la escuela.",
+      "accion": "Enseñale a pedirle que explique y no que resuelva.",
+      "fuente": "UNICEF y UNESCO, Kids Online Argentina 2025 (vía Chequeado)",
+      "url": "https://chequeado.com/el-explicador/el-58-de-chicos-y-adolescentes-argentinos-ya-uso-la-ia-y-la-mayoria-la-aplica-en-tareas-escolares/",
+      "frase": "tarea-explique",
+      "pais": "AR",
+      "revisado": "2026-10"
+    },
+    {
+      "id": "cargador",
+      "tipo": "consejo",
+      "texto": "Los celulares cargando fuera de los dormitorios durante la noche ayudan a dormir mejor y evitan charlas a escondidas.",
+      "accion": "Elijan juntos un \"lugar de carga\" familiar, también para los celulares de los grandes.",
+      "pais": "global",
+      "revisado": "2026-10"
+    },
+    {
+      "id": "aviso10",
+      "tipo": "consejo",
+      "texto": "Apagar de golpe es lo que más peleas genera. Avisar unos minutos antes ayuda a cerrar el juego o el video.",
+      "accion": "Probá el aviso de 10 minutos y que ellos elijan cómo terminar.",
+      "frase": "pantallas-2",
+      "pais": "global",
+      "revisado": "2026-10"
+    },
+    {
+      "id": "control-parental",
+      "tipo": "consejo",
+      "texto": "Los controles parentales del celular, las consolas y las apps ayudan, pero no reemplazan la charla: los chicos aprenden más con reglas que entienden.",
+      "accion": "Activá los controles y explicá por qué los ponés.",
+      "pais": "global",
+      "revisado": "2026-10"
+    },
+    {
+      "id": "contarme",
+      "tipo": "consejo",
+      "texto": "El silencio y la vergüenza son lo que más agrava los problemas online. Los chicos que saben que no los van a retar cuentan antes.",
+      "accion": "Decilo en voz alta: \"Si algo te pasa en internet, contame. No te voy a sacar el celular por contarme.\"",
+      "frase": "charlas-malestar",
+      "pais": "global",
+      "revisado": "2026-10"
+    }
+  ],
+  "consejosInicio": [
+    "Probá una frase hoy y contame cómo les fue.",
+    "Recordá: edades sí, nombres no.",
+    "Las mejores ideas salen cuando las elige toda la familia.",
+    "Si el ayudante se equivoca, pedile que lo explique de nuevo."
+  ],
+  "telefonos": {
+    "AR": [
+      {
+        "numero": "137",
+        "texto": "Denuncias de grooming y abuso, 24 h, todo el país."
+      },
+      {
+        "numero": "102",
+        "texto": "Orientación gratuita sobre chicos y adolescentes."
+      },
+      {
+        "numero": "911",
+        "texto": "Emergencias."
+      }
+    ]
+  },
+  "semanas": [
+    {
+      "n": 1,
+      "tema": "La mesa es para charlar",
+      "color": "#FFE3DA",
+      "mision": "Esta semana, la cena es sin celulares. Los de los grandes también.",
+      "items": [
+        {
+          "tipo": "reto",
+          "texto": "Cenar sin celulares al menos 3 noches"
+        },
+        {
+          "tipo": "plan",
+          "frase": "planes-preguntas"
+        },
+        {
+          "tipo": "charla",
+          "frase": "charlas-ia"
+        },
+        {
+          "tipo": "dato",
+          "sabias": [
+            "conflicto",
+            "aviso10"
+          ]
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "tema": "Dormir mejor",
+      "color": "#F3E9FF",
+      "mision": "Los celulares también duermen: de noche, a cargar fuera de las piezas.",
+      "items": [
+        {
+          "tipo": "reto",
+          "texto": "Todas las noches, los celulares cargan fuera de los dormitorios"
+        },
+        {
+          "tipo": "plan",
+          "frase": "dormir-rutina"
+        },
+        {
+          "tipo": "charla",
+          "frase": "dormir-charla"
+        },
+        {
+          "tipo": "dato",
+          "sabias": [
+            "cargador"
+          ]
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "tema": "Crear en vez de mirar",
+      "color": "#FFF1C7",
+      "mision": "Cambiemos un rato de videos por algo hecho con las manos.",
+      "items": [
+        {
+          "tipo": "reto",
+          "texto": "Reemplazar un rato de videos por una actividad creativa"
+        },
+        {
+          "tipo": "plan",
+          "frase": "planes-creativo"
+        },
+        {
+          "tipo": "frase",
+          "frase": "pantallas-4"
+        },
+        {
+          "tipo": "charla",
+          "frase": "charlas-falsas"
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "tema": "La IA como ayuda para la escuela",
+      "color": "#DDEEFF",
+      "mision": "Esta semana, el ayudante explica pero no resuelve.",
+      "items": [
+        {
+          "tipo": "reto",
+          "texto": "En todas las tareas, pedirle a la IA que explique y no que resuelva"
+        },
+        {
+          "tipo": "frase",
+          "frase": "tarea-explique"
+        },
+        {
+          "tipo": "frase",
+          "frase": "tarea-entendio"
+        },
+        {
+          "tipo": "dato",
+          "sabias": [
+            "ia-escuela",
+            "control-parental"
+          ]
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "tema": "¿Quién está del otro lado?",
+      "color": "#D6F5F1",
+      "mision": "Conozcamos con quién chatean y juegan online, sin espiar: acompañando.",
+      "items": [
+        {
+          "tipo": "reto",
+          "texto": "Jugar una partida o ver juntos la app que más usa"
+        },
+        {
+          "tipo": "charla",
+          "frase": "charlas-datos"
+        },
+        {
+          "tipo": "charla",
+          "frase": "charlas-chatbot"
+        },
+        {
+          "tipo": "dato",
+          "sabias": [
+            "desconocidos",
+            "rapidez"
+          ]
+        }
+      ]
+    },
+    {
+      "n": 6,
+      "tema": "Fin de semana desenchufado",
+      "color": "#E3F6DC",
+      "mision": "Un plan sin pantallas el fin de semana. Uno solo ya cuenta.",
+      "items": [
+        {
+          "tipo": "reto",
+          "texto": "Hacer al menos una salida o actividad sin pantallas"
+        },
+        {
+          "tipo": "plan",
+          "frase": "planes-salida"
+        },
+        {
+          "tipo": "plan",
+          "frase": "planes-lluvia"
+        },
+        {
+          "tipo": "dato",
+          "sabias": [
+            "acompanar",
+            "oms-edades"
+          ]
+        }
+      ]
+    },
+    {
+      "n": 7,
+      "tema": "Contame qué viste",
+      "color": "#FDE2EC",
+      "mision": "Preguntemos qué vieron en internet, igual que preguntamos por la escuela.",
+      "items": [
+        {
+          "tipo": "reto",
+          "texto": "Preguntar todos los días qué vieron o jugaron, sin retar"
+        },
+        {
+          "tipo": "charla",
+          "frase": "charlas-malestar"
+        },
+        {
+          "tipo": "plan",
+          "frase": "dormir-turnos"
+        },
+        {
+          "tipo": "dato",
+          "sabias": [
+            "contarme"
+          ]
+        }
+      ]
+    },
+    {
+      "n": 8,
+      "tema": "Revisar el acuerdo",
+      "color": "#FFE3DA",
+      "mision": "Las reglas que se revisan se cumplen más. Esta semana, a ajustar.",
+      "items": [
+        {
+          "tipo": "reto",
+          "texto": "Revisar el acuerdo familiar y elegir una regla nueva"
+        },
+        {
+          "tipo": "frase",
+          "frase": "pantallas-2"
+        },
+        {
+          "tipo": "plan",
+          "frase": "org-tareas"
+        },
+        {
+          "tipo": "dato",
+          "sabias": [
+            "limites",
+            "control-parental"
+          ]
+        }
+      ]
+    }
+  ],
+  "balance": {
+    "dificultades": [
+      {
+        "id": "cena",
+        "texto": "La cena",
+        "frase": "pantallas-3"
+      },
+      {
+        "id": "dormir",
+        "texto": "Antes de dormir",
+        "frase": "dormir-rutina"
+      },
+      {
+        "id": "apagar",
+        "texto": "Apagar sin pelear",
+        "frase": "pantallas-2"
+      },
+      {
+        "id": "finde",
+        "texto": "Los fines de semana",
+        "frase": "planes-salida"
+      },
+      {
+        "id": "tarea",
+        "texto": "La tarea",
+        "frase": "tarea-explique"
+      },
+      {
+        "id": "grandes",
+        "texto": "Los celulares de los grandes",
+        "frase": "pantallas-1"
+      }
+    ]
+  },
+  "reglasAcuerdo": [
+    "De noche, el celular duerme fuera de la pieza",
+    "En la mesa no hay celulares (tampoco los de los grandes)",
+    "Las apps nuevas se bajan con permiso",
+    "Nada de fotos ni datos personales a desconocidos",
+    "Si algo me incomoda, lo cuento y no me retan",
+    "Las contraseñas las sabe la familia",
+    "Avisamos 10 minutos antes de apagar",
+    "El fin de semana hay un plan sin pantallas"
+  ],
+  "rutas": [
+    {
+      "id": "primer-celular",
+      "titulo": "Su primer celular",
+      "bajada": "De decidir si está listo a revisar el acuerdo al mes. Paso a paso.",
+      "icono": "celular",
+      "color": "#DDEEFF",
+      "edad": [
+        8,
+        14
+      ],
+      "pasos": [
+        {
+          "titulo": "¿Está listo?",
+          "tipo": "Pensar",
+          "texto": "No hay una edad perfecta: depende de cada chico y de para qué lo necesita. Estas señales ayudan a decidir.",
+          "checklist": [
+            "Cuida sus cosas y respeta horarios",
+            "Sabe pedir ayuda cuando algo le incomoda",
+            "Entiende que lo que manda o publica puede quedar para siempre",
+            "Hay una razón concreta (por ejemplo, viaja solo a la escuela)"
+          ],
+          "nota": "Si todavía no, un celular de la familia que se usa en casa es un buen paso intermedio.",
+          "sabias": [
+            "primer-celular"
+          ],
+          "id": "p1"
+        },
+        {
+          "titulo": "La charla antes de dárselo",
+          "tipo": "Charlar",
+          "texto": "Antes de entregarlo, hablen de para qué es y qué hacer si algo sale mal. El ayudante te arma la charla a la medida de su edad.",
+          "checklist": [
+            "Le contamos para qué es el celular y para qué no",
+            "Hablamos de qué hacer si algo lo incomoda",
+            "Le dijimos que si nos cuenta algo, no se lo vamos a sacar"
+          ],
+          "frase": "charlas-celular",
+          "id": "p2"
+        },
+        {
+          "titulo": "Configurarlo juntos",
+          "tipo": "Configurar",
+          "texto": "Hacelo con tu hijo al lado: así entiende cada regla y no la vive como castigo.",
+          "checklist": [
+            "Activar el control parental (Family Link en Android; En familia y Tiempo en pantalla en iPhone)",
+            "Crear sus cuentas con la edad real",
+            "Que las apps nuevas necesiten permiso para bajarse",
+            "Desactivar las compras sin autorización",
+            "Poner privados los perfiles de las apps que use",
+            "Compartir la ubicación solo con la familia"
+          ],
+          "sabias": [
+            "control-parental"
+          ],
+          "id": "p3"
+        },
+        {
+          "titulo": "Las reglas de la casa",
+          "tipo": "Acordar",
+          "texto": "Elijan juntos las reglas. Las que proponen ellos se cumplen mucho más. Después, compártanlo o péguenlo en la heladera.",
+          "acuerdo": true,
+          "id": "p4"
+        },
+        {
+          "titulo": "La primera semana",
+          "tipo": "Acompañar",
+          "texto": "Los primeros días marcan el uso. Acompañar no es espiar: es estar cerca.",
+          "checklist": [
+            "Preguntar cada día qué hizo con el celular, sin interrogar",
+            "Mirar juntos sus apps y contactos una vez",
+            "Usar o jugar juntos con alguna app",
+            "Festejar lo que hizo bien"
+          ],
+          "sabias": [
+            "acompanar",
+            "contarme"
+          ],
+          "id": "p5"
+        },
+        {
+          "titulo": "Al mes: revisar",
+          "tipo": "Revisar",
+          "texto": "Revisen juntos qué funcionó y qué cambiar. Una regla que se ajusta se cumple más que una que se impone.",
+          "checklist": [
+            "Revisamos el acuerdo entre todos",
+            "Cambiamos o sumamos una regla",
+            "Agendamos la próxima revisión en 3 meses"
+          ],
+          "acuerdo": true,
+          "id": "p6"
+        }
+      ]
+    },
+    {
+      "id": "red-social",
+      "titulo": "Quiere abrirse una red social",
+      "bajada": "Edades mínimas, privacidad y cómo acompañar.",
+      "icono": "burbujas",
+      "color": "#FDE2EC",
+      "proximamente": true
+    },
+    {
+      "id": "juegos-online",
+      "titulo": "Juega online con otros",
+      "bajada": "Chats de juegos, compras y desconocidos.",
+      "icono": "joystick",
+      "color": "#E3F6DC",
+      "proximamente": true
+    },
+    {
+      "id": "ia-tarea",
+      "titulo": "Usa IA para la tarea",
+      "bajada": "Que aprenda con la IA, no que copie.",
+      "icono": "chispa",
+      "color": "#FFF1C7",
+      "proximamente": true
+    },
+    {
+      "id": "lo-molestan",
+      "titulo": "Lo están molestando por internet",
+      "bajada": "Qué hacer, qué guardar y a quién avisar.",
+      "icono": "escudo",
+      "color": "#D6F5F1",
+      "proximamente": true
+    }
+  ]
+}
