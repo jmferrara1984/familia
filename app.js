@@ -341,7 +341,7 @@
     });
     var ay = E.ayudante, txt0 = textoFinal(id);
     var botones;
-    var bWa = '<a class="btn ' + (ay === 'whatsapp' ? 'btn-accion' : 'btn-borde') + '" data-acc="wa" data-dest="wa" target="_blank" rel="noopener" href="' + esc(destino('wa', txt0)) + '">' + (ay === 'whatsapp' ? 'Copiar y abrir WhatsApp' : 'WhatsApp') + '</a>';
+    var bWa = '<button type="button" class="btn ' + (ay === 'whatsapp' ? 'btn-accion' : 'btn-borde') + '" data-acc="wa">' + (ay === 'whatsapp' ? 'Preguntarle a Meta AI' : 'WhatsApp') + '</button>';
     var bGpt = '<a class="btn ' + (ay === 'chatgpt' ? 'btn-accion' : 'btn-borde') + '" data-acc="gpt" data-dest="gpt" target="_blank" rel="noopener" href="' + esc(destino('gpt', txt0)) + '">' + (ay === 'chatgpt' ? 'Abrir en ChatGPT' : 'ChatGPT') + I.externo + '</a>';
     var bGem = '<a class="btn ' + (ay === 'gemini' ? 'btn-accion' : 'btn-borde') + '" data-acc="gem" data-dest="gem" target="_blank" rel="noopener" href="' + esc(destino('gem', txt0)) + '">' + (ay === 'gemini' ? 'Copiar y abrir Gemini' : 'Gemini') + I.externo + '</a>';
     var bCopiar = '<button type="button" class="btn btn-primario" data-acc="copiar">Copiar la frase</button>';
@@ -350,7 +350,8 @@
     else if (ay === 'gemini') botones = bGem + '<div class="fila-btns">' + bWa + bGpt + '</div>';
     else botones = bCopiar + '<div class="fila-btns">' + bWa + bGpt + '</div>';
     if (ay !== 'nose') botones += '<button type="button" class="btn btn-suave" data-acc="copiar">Solo copiar la frase</button>';
-    var pista = ay === 'whatsapp' ? '<p class="ayuda-chica" style="margin:0">En WhatsApp elegí el chat de Meta AI (el círculo azul) y pegá o enviá la frase.</p>' : '';
+    var pista = ay === 'whatsapp' ? '<p class="ayuda-chica" style="margin:0">Copiamos la frase y te mostramos cómo pegarla en Meta AI, el círculo azul de WhatsApp.</p>' : '';
+    var guia = V.frase.guia ? guiaMetaAI(txt0) : ''; V.frase.guia = false;
     var marcarDia = f.dia ? (E.desafio.indexOf(f.dia) >= 0
       ? '<button type="button" class="btn btn-ok" data-acc="desmarcar">' + I.check + ' Día ' + f.dia + ' hecho</button>'
       : '<button type="button" class="btn btn-suave" data-acc="marcar">Marcar el día ' + f.dia + ' como hecho</button>') : '';
@@ -359,8 +360,25 @@
       '<div style="display:flex;flex-direction:column;gap:8px"><span class="rotulo">La frase lista</span><div class="frase-caja" id="frase">' + cuerpo + '</div>' +
       (n ? '<span class="ayuda-chica">Tocá lo amarillo y completalo antes de enviar. Edades sí, nombres no.</span>' : '') + '</div>' +
       '<div style="display:flex;flex-direction:column;gap:10px">' + botones + pista + '</div>' + marcarDia +
-      comentario(esc(f.mascota), 'guino') + '</main>';
+      comentario(esc(f.mascota), 'guino') + '</main>' + guia;
   };
+  /* Meta AI no tiene un número ni un enlace propio: wa.me/?text= abre "Compartir con..." y la gente se pierde.
+     Por eso copiamos la frase, mostramos los pasos y abrimos WhatsApp en su pantalla de inicio. */
+  function guiaMetaAI(txt) {
+    var circulo = '<span class="meta-circulo" aria-hidden="true"></span>';
+    return '<div class="hoja-fondo" data-acc="cerrar-guia"></div><section class="hoja" role="dialog" aria-modal="true" aria-labelledby="guia-tit">' +
+      '<div class="hoja-cab"><span class="hoja-ok">' + I.check + ' Frase copiada</span><button type="button" class="btn-icono" data-acc="cerrar-guia" aria-label="Cerrar">✕</button></div>' +
+      '<h2 id="guia-tit">Ahora, en WhatsApp</h2>' +
+      '<ol class="pasos-guia">' +
+      '<li><span class="paso-num">1</span><span>Tocá <b>Abrir WhatsApp</b> acá abajo.</span></li>' +
+      '<li><span class="paso-num">2</span><span>En <b>Chats</b>, tocá el círculo de colores ' + circulo + ' <b>Meta AI</b>. Suele estar abajo a la derecha, o en la barra de búsqueda de arriba.</span></li>' +
+      '<li><span class="paso-num">3</span><span>Mantené apretado donde se escribe, tocá <b>Pegar</b> y enviá.</span></li>' +
+      '</ol>' +
+      '<a class="btn btn-accion" href="whatsapp://" data-acc="abrir-wa">Abrir WhatsApp</a>' +
+      '<span class="ayuda-chica" style="text-align:center">¿No ves el círculo? Actualizá WhatsApp o usá ChatGPT o Gemini.</span>' +
+      '<a class="enlace-suave" target="_blank" rel="noopener" href="' + esc(destino('wa', txt)) + '">Prefiero mandársela a una persona</a>' +
+      '</section>';
+  }
   function textoFinal(id) {
     var f = porId(D.frases, id), g = E.rellenos[id] || {}, n = 0;
     return f.frase.replace(/\[([^\]]+)\]/g, function (m) { var v = (g[n++] || '').trim(); return v || m; });
@@ -392,7 +410,9 @@
     var aviso = falt ? ' Ojo: quedan ' + falt + ' partes entre corchetes para completar.' : '';
     switch (b.dataset.acc) {
       case 'copiar': copiar(txt, function (ok) { toast(ok ? '¡Copiada! Ahora pegala en tu ayudante.' + aviso : 'No se pudo copiar. Mantené apretada la frase para copiarla.'); }); break;
-      case 'wa': copiar(txt); toast('Elegí el chat de Meta AI y enviá la frase.' + aviso); break;
+      case 'wa': copiar(txt); V.frase.guia = true; render(); if (falt) toast(aviso.trim()); break;
+      case 'cerrar-guia': render(); break;
+      case 'abrir-wa': copiar(txt); break;
       case 'gpt': copiar(txt); if (falt) toast(aviso.trim()); break;
       case 'gem': copiar(txt); toast('Frase copiada: pegala en Gemini.' + aviso); break;
       case 'marcar': var f = porId(D.frases, id); if (E.desafio.indexOf(f.dia) < 0) E.desafio.push(f.dia); guardar(); toast('¡Día ' + f.dia + ' completado!'); render(); break;
