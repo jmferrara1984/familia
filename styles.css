@@ -203,3 +203,16 @@ h2 { margin: 0; font-size: 18px; font-weight: 800; }
 .acuerdo-cab img { width: 56px; height: 56px; flex: none; }
 .acuerdo-cab b { display: block; font-size: 18px; font-weight: 900; line-height: 1.15; }
 .acuerdo ol { margin: 0; padding-left: 22px; display: flex; flex-direction: column; gap: 6px; font-weight: 700; font-size: 15px; line-height: 1.35; }
+
+/* Guía para pegar la frase en Meta AI (WhatsApp) */
+.hoja-fondo { position: fixed; inset: 0; background: rgba(43, 33, 64, 0.45); z-index: 30; }
+.hoja { position: fixed; left: 0; right: 0; bottom: 0; z-index: 31; background: var(--fondo); border-radius: 28px 28px 0 0; padding: 18px var(--gutter-der) calc(22px + env(safe-area-inset-bottom, 0px)) var(--gutter-izq); display: flex; flex-direction: column; gap: 14px; max-width: 560px; margin: 0 auto; max-height: 92vh; overflow-y: auto; animation: hoja-sube 0.22s ease-out; }
+@keyframes hoja-sube { from { transform: translateY(40px); opacity: 0; } to { transform: none; opacity: 1; } }
+.hoja h2 { margin: 0; font-size: 22px; }
+.hoja-cab { display: flex; align-items: center; justify-content: space-between; }
+.hoja-ok { display: inline-flex; align-items: center; gap: 6px; background: var(--verde); color: var(--blanco); font-weight: 800; font-size: 14px; padding: 6px 12px; border-radius: 999px; }
+.pasos-guia { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.pasos-guia li { display: flex; gap: 12px; align-items: flex-start; background: var(--blanco); border-radius: 18px; padding: 12px 14px; font-size: 16px; line-height: 1.4; }
+.paso-num { flex: none; width: 30px; height: 30px; border-radius: 50%; background: var(--tinta); color: var(--blanco); font-weight: 900; display: inline-flex; align-items: center; justify-content: center; }
+.meta-circulo { display: inline-block; width: 18px; height: 18px; border-radius: 50%; vertical-align: -3px; background: conic-gradient(#0082FB, #A033FF, #FF5C87, #00C6FF, #0082FB); -webkit-mask: radial-gradient(circle, transparent 4px, #000 5px); mask: radial-gradient(circle, transparent 4px, #000 5px); }
+.enlace-suave { text-align: center; font-weight: 700; font-size: 15px; color: var(--tinta-suave); text-decoration: underline; padding: 6px 0; }
